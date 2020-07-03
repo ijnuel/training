@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Proxima Nova' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h1>Training Websites</h1>
+            <h2>for Developers</h2>
+            <h2>& Entrepreneurs</h2>
+            <h3>Welcome back, please login to your account</h3>
+            <em id="loginError"></em>
+            <form id="loginForm">
+                <div>
+                    <label for="email">
+                        <input required value="creative.ui89@gmail.com" name="email" id="email" autocomplete>
+                        <span>Email Address</span>
+                    </label>
+                </div>
+                <div>
+                    <label for="password">
+                        <input required pattern=".{8,}" name="password" type="password" value='developer' id="password" autocomplete="off">
+                        <span>Password</span>
+                    </label>
+                </div>
+                <div>
+                    <div class="col-50">
+                        <label class="containerBox">Remember me
+                            <input type="checkbox" id="remember" name="remember" value="remember">
+                            <span class="checkMark"></span>
+                        </label>
+                    </div>
+                    <div class="col-50">
+                        <label class="containerBox"><a href="#">Forgot Password?</a>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="col-50">
+                        <button type="button" class="button button-block" id="loginButton">Login</button>
+                    </div>
+                    <div class="col-50">
+                        <button type="button" class="button-block unActive" id="signupButton">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="grid-item" >
+            <img src="css/4380.jpg" alt="Theme Image" class="image">
+        </div>
+    </div>
+</body>
+</html>

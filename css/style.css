@@ -1,0 +1,245 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 50px;
+    margin-left: 50px;
+ }
+
+.grid-item {
+    padding: 20px;
+}
+
+img {
+    margin-top: 100px;
+}
+
+body {
+    font-family: 'Proxima Nova';
+}
+
+a {
+    text-decoration: none;
+    color: #a5aeb7;
+    -webkit-transition: .5s ease;
+    transition: .5s ease
+}
+
+a:hover {
+    color: darkgrey;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: left;
+    color: #524DAE;
+    font-size:55px;
+    font-weight: bolder;
+    margin: auto;
+}
+
+h2 {
+    text-align: left;
+    color: #373737;
+    font-size:55px;
+    font-weight: lighter;
+    margin: auto
+}
+
+h3 {
+    text-align: left;
+    color: #a5aeb7;
+    font-size:25px;
+    font-weight: lighter;
+    margin-top: 90px;
+}
+
+label {
+    color: #a5aeb7;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 6px 0;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+span {
+    padding-left: 35px;
+    padding-top: 10px;
+    font-size: 16px;
+    pointer-events: none;
+    position:absolute;
+    left:0;
+    top:0;
+    transition: 0.2s;
+    opacity:0.5;
+}
+
+input,textarea {
+    font-size: 16px;
+    display: block;
+    width: 68%;
+    height: 60px;
+    background: none 0 0;
+    border: 1px solid #a5aeb7;
+    border-left: 15px solid #524DAE;
+    color: #524DAE;
+    border-radius: 10px;
+    -webkit-transition: border-color .25s ease,box-shadow .25s ease;
+    transition: border-color .25s ease,box-shadow .25s ease;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+    resize: vertical;
+    letter-spacing: .1em;
+    font-weight: bolder;
+}
+
+input:focus,textarea:focus {
+    outline: 0;
+    border-color: #524DAE;
+}
+
+.col-50 {
+    font-size: 16px;
+    float: left;
+    width: 32%;
+    margin-bottom: 8px;
+    margin-right: 8%;
+}
+
+.button, .unActive:hover, .unActive:focus {
+    border: 2px solid #524DAE;
+    outline: none;
+    border-radius: 5px;
+    padding: 15px 0;
+    font-size: 16px;
+    height: 50px;
+    letter-spacing: .1em;
+    background: #524DAE;
+    color: #fff;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-appearance: none;
+    cursor: pointer;
+    box-shadow: 25px 25px 75px #c2bbfb;
+}
+
+.button:hover,.button:focus, .unActive {
+    background: white;
+    color: #524DAE;
+    cursor: pointer;
+    border: 2px solid #524DAE;
+    outline: none;
+    border-radius: 5px;
+    padding: 15px 0;
+    font-size: 16px;
+    height: 50px;
+    letter-spacing: .1em;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-appearance: none
+}
+
+.button-block {
+    display: block;
+    width: 80%
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #524DAE;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #524DAE;
+}
+
+.containerBox {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.containerBox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    font-size: 50px;
+}
+
+.checkMark {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #a5aeb7;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+.containerBox:hover input ~ .checkMark {
+    background-color: #ccc;
+}
+
+.containerBox input:checked ~ .checkMark {
+    background-color: #524DAE;
+}
+
+.checkMark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.containerBox input:checked ~ .checkMark:after {
+    display: block;
+}
+
+.containerBox .checkMark:after {
+    left: 3px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.image {
+    width: 100%;
+}
+
+.invalidLogin {
+    /*border-color: orangered;*/
+    border-bottom-color: crimson;
+    border-right-color: crimson;
+    border-top-color: crimson;
+}
+
+em {
+    font-size: large;
+    color: crimson;
+}
